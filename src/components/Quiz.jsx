@@ -1,12 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import "./quiz.css";
-import { useSelector, useDispatch } from "react-redux";
-import { Link, Routes, Route } from "react-router-dom";
-import Results from "./Results";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Quiz = () => {
   const inputref = useRef(null);
-  const dispatch = useDispatch();
+
   const quiz = useSelector((state) => state.mainReducer);
   const [indexx, setIndex] = React.useState(0);
   const [currQ, setCurrQ] = React.useState([]);
@@ -31,13 +30,14 @@ const Quiz = () => {
   useEffect(() => {
     console.log(result);
     result.filter((item, index) => {
-      if (quiz[i].answer.includes(item) && item != "") {
+      if (quiz[i].answer.includes(item) && item !== "") {
         setScore(score + 1);
         setI(i + 1);
+        return score;
       } else {
         setI(i + 1);
-
         setScore(score);
+        return score;
       }
     });
   }, [result]);

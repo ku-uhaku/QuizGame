@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Quiz />} />
-        <Route path="result/:score" element={<Results />} />
+        <Route path="result/:score" element={<Results />}></Route>
       </Routes>
     </div>
   );
