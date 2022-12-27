@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+}
+.card h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-block-end: 10px;
+    border-bottom: 1px solid  rgba(31, 31, 31, 0.336);
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.input{
+    margin-block: 1rem;
+}
+label{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 7px;
+}
+button, a{
+    padding: 10px 20px;
+    background: rgb(74, 74, 250);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
